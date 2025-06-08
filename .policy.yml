@@ -1,0 +1,10 @@
+policy:
+  approval:
+    - or:
+        - default review
+
+approval_rules:
+  - name: default review
+    requires:
+      count: 1
+      permissions: ["write"]
